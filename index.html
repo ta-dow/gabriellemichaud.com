@@ -31,12 +31,32 @@
 				width: 90%;
 				border-radius: 14px;
 				box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
-
             }
 
-            .feature-image:hover {
-                background-color: black;
-                opacity: 0.5;
+            .overlay-container {
+                position: relative;
+                width: 300px;
+                height: 200px;
+            }
+            .overlay-container img {
+                width: 96%;
+                height: auto;
+                padding: 2%;
+            }
+            .overlay-container .overlay-text {
+                position: absolute;
+                top: 0;
+                color: #eef;
+                background-color: rgba(0,0,0,0.6);
+                opacity: 0;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+                font-size: 30px;
+                transition: opacity 0.5s ease;
+            }
+            .overlay-container:hover .overlay-text {
+                opacity: 0.9;
             }
         </style>
     </head>
@@ -50,10 +70,17 @@
                 <br/>
             </center>
 
-        <p>
+    <p>
+        <body>
+               <div class="overlay-container">
             <a href="adventures.html">
                 <img src="moraine-lake.jpg" class="feature-image" 
                 style="float:right; margin-right: 50px">
+                <div class="overlay-text">
+                    Hitchhiking
+                </div>
+            </div>
+        </body>
             </a>
             
             <img src="moraine-lake.jpg" class="feature-image" style="float:left; margin-left: 50px">
