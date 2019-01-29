@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>ADVENTURE INTO THE VOID</title>
+    <head>
+        <title>ADVENTURE INTO THE VOID</title>
         <meta charset="utf-8"/>
 
-		<style type="text/css">
-			body {
-				font-family: 'Gill Sans', Helvetica, sans-serif;
-				font-size: 20px;
-			}
-			h1 {
-				display: block;
-				width: 100%;
-				white-space: pre-line;
-				font-size: 8vw;
-				font-weight: 200;
-			}
-			h2 {
-				font-size: 40px;
-				font-weight: 400;
-            }   
-			.main-content {
-				width: 90%;
-				max-width: 900px;
-			}
-			.feature-image {
-				margin-top: 25px;
-				margin-bottom: 5px;
-				max-width: 650px;
-				width: 90%;
-				border-radius: 14px;
-				box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
+        <style type="text/css">
+            body {
+                font-family: 'Gill Sans', Helvetica, sans-serif;
+                font-size: 20px;
             }
-
+            h1 {
+                display: block;
+                width: 100%;
+                white-space: pre-line;
+                font-size: 8vw;
+                font-weight: 200;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 400;
+            }   
+            .main-content {
+                width: 90%;
+                max-width: 900px;
+            }
+            .feature-image {
+                margin-top: 25px;
+                margin-bottom: 5px;
+                max-width: 650px;
+                width: 90%;
+                border-radius: 14px;
+                box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
+            }
             .overlay-container {
                 position: relative;
                 width: 300px;
@@ -56,6 +55,19 @@
             }
             .overlay-container:hover .overlay-text {
                 opacity: 0.9;
+                border-radius: 14px
+            }
+            .feature-overlay {
+                border-radius: 14px;
+                box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
+            }
+            .column-left {
+                float:left
+                margin-left: 50px
+            }
+            .column-right {
+                float: right;
+                margin-right: 50px;
             }
         </style>
     </head>
@@ -73,11 +85,11 @@
         <article>
             <a href="adventures.html">
                 <div class="overlay-container">
-                    <img src="static/images/moraine-lake.jpg">
-                    <div class="overlay-text">
-                        <br/><br/>
-                        Hitchhiking
-                    </div>
+                    <img src="static/images/moraine-lake.jpg" class="feature-overlay">
+                        <div class="overlay-text">
+                            <br/><br/>
+                            Hitchhiking
+                        </div>
                 </div>
             </a>
             
