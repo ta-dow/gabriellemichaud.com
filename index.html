@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>ADVENTURE INTO THE VOID</title>
+    <head>
+        <title>Vanlife Medic</title>
         <meta charset="utf-8"/>
 
         <style type="text/css">
-			body {
+            body {
                 font-family: 'Gill Sans', Helvetica, sans-serif;
                 font-size: 20px;
             }
@@ -16,49 +16,18 @@
                 font-size: 8vw;
                 font-weight: 200;
             }
-            h2 {
-                font-size: 40px;
-                font-weight: 400;
-            }   
-			* {
-  				box-sizing: border-box;
-			}
-			.row {
-  				display: -ms-flexbox;
-  				display: flex;
-  				-ms-flex-wrap: wrap;
-  				flex-wrap: wrap;
-  				padding: 0 4px;
-			}
-			.column {
-			  	-ms-flex: 50%;
-			  	flex: 50%;
-			  	max-width: 50%;
-			  	padding: 0 4px;
-			}
-			.column img {
-			  	margin-top: 8px;
-			  	vertical-align: middle;
-			  	border-radius: 14px;
+            .feature-image {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                max-width: 1000px;
+                width: 90%;
+                border-radius: 10px;
                 box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
-                width: 100%;
-			}
-			@media screen and (max-width: 800px) {
-		  	.column {
-		   		-ms-flex: 50%;
-		    	flex: 50%;
-		    	max-width: 50%;
-  			}
-			@media screen and (max-width: 600px) {
-  			.column {
-    			-ms-flex: 100%;
-   				flex: 100%;
-    			max-width: 100%;
-  			}
-  			.overlay-container {
+            }
+            .overlay-container {
                 position: relative;
-                width: 300px;
-                height: 200px;
+                width: 900px;
+                height: 400px;
             }
             .overlay-container img {
                 width: 100%;
@@ -78,55 +47,125 @@
             }
             .overlay-container:hover .overlay-text {
                 opacity: 0.9;
-                border-radius: 14px;
+                border-radius: 14px
             }
             .feature-overlay {
                 border-radius: 14px;
                 box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
             }
-		</style>
-	    </head>
+            .fancy-button {
+                display: inline-block;
+                margin: 15px;
+                width: 120px;
+                text-align: center;
+                padding: 15px;
+                border: 2px solid;
+                border-color: #CDCCCC;
+                text-decoration: none;
+                color: #CDCCCC;
+                background-color: rgba(0,0,0,0);
+                transition: background-color 0.5s ease,
+                            color 0.5s ease;
+			}
+			.fancy-button:hover {
+                color: black;
+			    background-color: #CDCCCC;
+                transition: background-color 0.5s ease,
+                            color 0.5s ease;
+        </style>
+    </head>
     <body>
         <header>
             <center>
+            	<a href="contact.html" class="fancy-button">        
+                    CONTACT
+                </a>
+                <a href="art.html" class="fancy-button">
+                	EXPRESSION
+                </a>
                 <br/><br/>
-                <h1 align="center">ADVENTURE<br/>INTO THE VOID</h1>
+                <h1 align="center">VANLIFE MEDIC</h1>
                 <br/><br/>
             </center>
         </header>
-	
-		<article>
-		<div class="row"> 
-  			<div class="column">
-            	<a href="hitchhiking.html">
-                <div class="overlay-container">
-                    <img src="static/images/index-1.jpg" class="feature-overlay">
-                        <div class="overlay-text"></div>
-                </div>
-            </a>
-		   
-			    <a href="nepal.html">
-			    <img src="static/images/index-2.jpg">
-			    </a>
-			</div>
 
-			<div class="column">
-			    <a href="colombia.html">
-			    <img src="static/images/index-3.jpg">
-				</a>
+        <article>
+            <div>
+            	<center>
+	                <a href="nyc.html">
+	                    <div class="overlay-container">
+		                    <img src="static/images/home-6.jpg" class="feature-image feature-overlay">
+		                    <div class="overlay-text">
+		                    	<br/><br/><br/><br/><br/><br/>
+		                    	NEW YORK CITY
+		                    </div>
+		                </div>
+	                </a>
+	                <br/>
 
-				<a href="nyc.html">
-			    <img src="static/images/index-4.jpg">
-				</a>
-			</div>
-		</div>
-		</article>
+	                <a href="cambodia.html">
+	                	<div class="overlay-container">
+	                		<img src="static/images/home-5.jpg" class="feature-image feature-overlay">
+	                		<div class="overlay-text">
+	                			<br/><br/><br/><br/><br/><br/>
+	                			CAMBODIA
+	                		</div>
+	                	</div>
+	                </a>
+	                <br/>
 
-		<footer>
-			<br/>
-	        <center>
-	            Gabrielle Michaud © 2019
-	        </center>
-	    </footer>
-	</body>
+	                <a href="nepal.html">
+	                	<div class="overlay-container">
+	                		<img src="static/images/home-4.jpg" class="feature-image feature-overlay">
+	                		<div class="overlay-text">
+	                			<br/><br/><br/><br/><br/><br/>
+	                			NEPAL
+	                		</div>
+	                	</div>
+	                </a>
+	                <br/>
+
+	                <a href="mexico.html">
+	                	<div class="overlay-container">
+	                		<img src="static/images/home-3.jpg" class="feature-image feature-overlay">
+	                		<div class="overlay-text">
+	                			<br/><br/><br/><br/><br/><br/>
+	                			MEXICO
+	                		</div>
+	                	</div>
+	                </a>
+	                <br/>
+
+	                <a href="colombia.html">
+	                	<div class="overlay-container">
+	                		<img src="static/images/home-2.jpg" class="feature-image feature-overlay">
+	                		<div class="overlay-text">
+	                			<br/><br/><br/><br/><br/><br/>
+	                			COLOMBIA
+	                		</div>
+	                	</div>
+	                </a>
+	                <br/>
+
+	                <a href="hitchhiking.html">
+	                	<div class="overlay-container">
+	                		<img src="static/images/home-1.jpg" class="feature-image feature-overlay">
+	                		<div class="overlay-text">
+	                			<br/><br/><br/><br/><br/><br/>
+	                			HITCHHIKING ACROSS CANADA
+	                		</div>
+	                	</div>
+	                </a>
+                </center>
+            </div>
+        </article>
+
+        <footer>
+           <br/>
+           <br/>
+            <center>
+                Gabrielle Michaud © 2019
+            </center>
+        </footer>
+    </body>
 </html>
