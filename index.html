@@ -24,7 +24,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                filter: brightness(50%);
+                filter: brightness(30%);
                 animation: fadein 5s ease forwards;
 			}
             .section {
@@ -91,16 +91,16 @@
                 text-align: center;
                 padding: 15px;
                 border: 2px solid;
-                border-color: #CDCCCC;
+                border-color: #b8b7b7;
                 text-decoration: none;
-                color: #CDCCCC;
+                color: #b8b7b7;
                 background-color: rgba(0,0,0,0);
                 transition: background-color 0.5s ease,
                             color 0.5s ease;
 			}
 			.fancy-button:hover {
                 color: black;
-			    background-color: #CDCCCC;
+			    background-color: #b8b7b7;
                 transition: background-color 0.5s ease,
                             color 0.5s ease;
 			}
@@ -110,6 +110,17 @@
             }
             * {
                 box-sizing: border-box;
+            }
+            .box {
+                display: inline-block;
+                width: 90%;
+                max-width: 800px;
+                color: #b8b7b7;
+                text-align-last: justify;
+            }
+            .contact-image {
+                width: 4%;
+                height: 4%;
             }
 		</style>
 	</head>
@@ -122,10 +133,14 @@
                     VANLIFE MEDIC
                 </h1>
                 <br/>
+
+                <div class="box">I'm an adventure seeker and music addict with a passion for traveling, web dessign and the medical field. Come with me on these journeys around the world through the wonders of a camera lens.</div>
+                <br/><br/>
+                <hr width="55%">
+
+                <!-- <a href="contact.html" class="fancy-button">        
+                    CONTACT -->
                 <br/>
-                <br/>
-                <a href="contact.html" class="fancy-button">        
-                    CONTACT
                 </a>
                 <a href="art.html" class="fancy-button">
                     ART
@@ -199,11 +214,16 @@
 
         <footer>
             <br/>
-            <br/>
+            <hr width="900px">
             <center>
-                Gabrielle Michaud © 2019
+                <div>
+                    <a href="https://www.instagram.com/__runawayphotos__/" target="_blank"><img src="static/images/sm-instagram.jpg" class="contact-image"></a>
+
+                    <a href="http://noveltyenhancement.tumblr.com/" target="_blank"><img src="static/images/sm-tumblr.jpg" class="contact-image"></a>
+
+                    <a href="https://open.spotify.com/playlist/3TEITRo2xWwCNwW6Hhx7we" target="_blank"><img src="static/images/sm-spotify.jpg" class="contact-image"></a>
+                </div>
             </center>
-            <br/>
         </footer>
     </body>
 </html>
