@@ -1,22 +1,55 @@
 <!DOCTYPE html>
 <html>
-    <head>
+	<head>
         <title>Vanlife Medic</title>
-        <meta charset="utf-8"/>
-
-        <style type="text/css">
-            body {
+ 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style type="text/css">
+			body, html {
+                width: 100%;
+                height: 100%;
+                margin: 0;
                 font-family: 'Gill Sans', Helvetica, sans-serif;
                 font-size: 20px;
             }
+            .bg {
+                position: absolute;
+                opacity: 0;
+                z-index: 0;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: url("static/images/tea.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: brightness(50%);
+                animation: fadein 5s ease forwards;
+			}
+            .section {
+                height: 100vh;
+                background-size: cover;
+                background-color: #111;
+                padding-top: 10%;
+            }
             h1 {
                 display: block;
+                margin: 0;
                 width: 100%;
                 white-space: pre-line;
                 font-size: 8vw;
-                font-weight: 200;
+                font-weight: 400;
+                color: #CDCCCC;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.42);
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
             }
-
+            .content {
+                position: relative;
+                z-index: 100;
+                text-align: center;
+            }
             .overlay-container {
                 padding: 0px;
                 position: relative;
@@ -51,11 +84,10 @@
                 opacity: 0.9;
                 border-radius: 14px
             }
-
-            .fancy-button {
+			.fancy-button {
                 display: inline-block;
                 margin: 15px;
-                width: 120px;
+                width: 130px;
                 text-align: center;
                 padding: 15px;
                 border: 2px solid;
@@ -71,93 +103,107 @@
 			    background-color: #CDCCCC;
                 transition: background-color 0.5s ease,
                             color 0.5s ease;
+			}
+            @keyframes fadein {
+                from {opacity: 0;}
+                to   {opacity: 1;}
             }
-        </style>
-    </head>
-    <body>
-        <header>
-            <center>
-            	<a href="contact.html" class="fancy-button">        
+            * {
+                box-sizing: border-box;
+            }
+		</style>
+	</head>
+	
+	<body>
+        <div class="bg"></div>
+        <div class="section">
+            <div class="content">
+                <h1>
+                    VANLIFE MEDIC
+                </h1>
+                <br/>
+                <br/>
+                <br/>
+                <a href="contact.html" class="fancy-button">        
                     CONTACT
                 </a>
                 <a href="art.html" class="fancy-button">
-                	EXPRESSION
+                    ART
                 </a>
-                <br/><br/>
-                <h1 align="center">VANLIFE MEDIC</h1>
-                <br/><br/>
-            </center>
-        </header>
+            </div>
+        </div>
 
         <article>
-        	<center>
+            <center>
+                <br/>
                 <a href="nyc.html">
                     <div class="overlay-container">
-	                    <img src="static/images/home-6.jpg">
-	                    <div class="overlay-text">
-	                    	NEW YORK CITY
-	                    </div>
-	                </div>
+                        <img src="static/images/home-6.jpg">
+                        <div class="overlay-text">
+                            NEW YORK CITY
+                        </div>
+                    </div>
                 </a>
                 <br/>
 
                 <a href="cambodia.html">
-                	<div class="overlay-container">
-                		<img src="static/images/home-5.jpg">
-                		<div class="overlay-text">
-                			CAMBODIA
-                		</div>
-                	</div>
+                    <div class="overlay-container">
+                        <img src="static/images/home-5.jpg">
+                        <div class="overlay-text">
+                            CAMBODIA
+                        </div>
+                    </div>
                 </a>
                 <br/>
 
                 <a href="nepal.html">
-                	<div class="overlay-container">
-                		<img src="static/images/home-4.jpg">
-                		<div class="overlay-text">
-                			NEPAL
-                		</div>
-                	</div>
+                    <div class="overlay-container">
+                        <img src="static/images/home-4.jpg">
+                        <div class="overlay-text">
+                            NEPAL
+                        </div>
+                    </div>
                 </a>
                 <br/>
 
                 <a href="mexico.html">
-                	<div class="overlay-container">
-                		<img src="static/images/home-3.jpg">
-                		<div class="overlay-text">
-                			MEXICO
-                		</div>
-                	</div>
+                    <div class="overlay-container">
+                        <img src="static/images/home-3.jpg">
+                        <div class="overlay-text">
+                            MEXICO
+                        </div>
+                    </div>
                 </a>
                 <br/>
 
                 <a href="colombia.html">
-                	<div class="overlay-container">
-                		<img src="static/images/home-2.jpg">
-                		<div class="overlay-text">
-                			COLOMBIA
-                		</div>
-                	</div>
+                    <div class="overlay-container">
+                        <img src="static/images/home-2.jpg">
+                        <div class="overlay-text">
+                            COLOMBIA
+                        </div>
+                    </div>
                 </a>
                 <br/>
 
                 <a href="hitchhiking.html">
-                	<div class="overlay-container">
-                		<img src="static/images/home-1.jpg">
-                		<div class="overlay-text">
-                			HITCHHIKING ACROSS CANADA
-                		</div>
-                	</div>
+                    <div class="overlay-container">
+                        <img src="static/images/home-1.jpg">
+                        <div class="overlay-text">
+                            HITCHHIKING ACROSS CANADA
+                        </div>
+                    </div>
                 </a>
             </center>
         </article>
 
         <footer>
-           <br/>
-           <br/>
+            <br/>
+            <br/>
             <center>
                 Gabrielle Michaud © 2019
             </center>
+            <br/>
         </footer>
     </body>
 </html>
