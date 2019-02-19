@@ -12,26 +12,9 @@
                 font-family: 'Gill Sans', Helvetica, sans-serif;
                 font-size: 20px;
             }
-            .bg {
-                position: absolute;
-                opacity: 0;
-                z-index: 0;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url("static/images/tea.jpg");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                filter: brightness(30%);
-                animation: fadein 5s ease forwards;
-			}
-            .section {
-                height: 100vh;
-                background-size: cover;
-                background-color: #111;
-                padding-top: 10%;
+            a {
+                color: inherit;
+                text-decoration: none;
             }
             h1 {
                 display: block;
@@ -44,6 +27,42 @@
                 text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.42);
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+            }
+            footer {
+                opacity: 0.7;
+            }
+            .bg {
+                width: 100%;
+                height: 100vh;
+                min-height: 500px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                background-image: url("static/images/tea.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: brightness(30%);
+                animation: fadein 5s ease forwards;
+            }
+            .section {
+                position: relative;
+                height: 100vh;
+                min-height: 500px;
+                background-size: cover;
+                background-color: #111;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .box {
+                display: inline-block;
+                margin: 0;
+                max-width: 58vw;
+                color: #b8b7b7;
+                font-size: 20px;
+                font-weight: 400;
             }
             .content {
                 position: relative;
@@ -107,68 +126,50 @@
                 from {opacity: 0;}
                 to   {opacity: 1;}
             }
-            * {
-                box-sizing: border-box;
-            }
-            .box {
-                display: inline-block;
-		margin: 0;
-		max-width: 58vw;
-	        color: #b8b7b7;
-	        font-size: 20px;
-	        font-weight: 400;
-            }
             .contact-image {
                 width: 4%;
                 height: 4%;
             }
-            i {
+            .down-arrow {
+                display: block;
+                position: absolute;
+                bottom: 30px;
+                z-index: 100;
+                color: white;
                 border: solid #b8b7b7;
                 filter: brightness(50%);
                 border-width: 0 3px 3px 0;
-                display: inline-block;
                 padding: 3px;
-            }
-            .down {
                 transform: rotate(45deg);
                 -webkit-transform: rotate(45deg);
-}
+            }
+            .contact-links a:hover {
+                opacity: 0.7;
+            }
 		</style>
 	</head>
 	
 	<body>
-        <div class="bg"></div>
         <div class="section">
+            <div class="bg"></div>
+            <i class="down-arrow"></i>
             <div class="content">
-                <h1>
-                    VANLIFE MEDIC
-                </h1>
+                <h1>VANLIFE MEDIC</h1>
                 <br/>
-
-                <div class="box">I'm an adventure seeker and music addict with a passion for traveling, web dessign and the medical field. Come with me on these journeys around the world through the wonders of a camera lens.</div>
+                <div class="box">
+                    I'm an adventure seeker and music addict with a passion for traveling, 
+                    web dessign and the medical field. Come with me on these journeys around 
+                    the world through the wonders of a camera lens.
+                </div>
                 <br/><br/>
-                <hr width="55%">
+                <hr width="94.6%">
                 <br/>
-                </a>
                 <a href="art.html" class="fancy-button">
                     ART
                 </a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-
-                <i class="down"></i>
             </div>
         </div>
-
+                
         <article>
             <center>
                 <br/>
@@ -233,17 +234,30 @@
             </center>
         </article>
 
+        <br/>
+        <hr style="max-width: 900px; width: 90%">
+        <center>
+            <div class="contact-links">
+                <a href="https://www.instagram.com/__runawayphotos__/" target="_blank">
+                    <img src="static/images/sm-instagram.jpg" class="contact-image">
+                </a>
+
+                <a href="http://noveltyenhancement.tumblr.com/" target="_blank">
+                    <img src="static/images/sm-tumblr.jpg" class="contact-image">
+                </a>
+
+                <a href="https://open.spotify.com/playlist/3TEITRo2xWwCNwW6Hhx7we" target="_blank">
+                    <img src="static/images/sm-spotify.jpg" class="contact-image">
+                </a>
+            </div>
+        </center>
+
         <footer>
-            <br/>
-            <hr width="900px">
             <center>
-                <div>
-                    <a href="https://www.instagram.com/__runawayphotos__/" target="_blank"><img src="static/images/sm-instagram.jpg" class="contact-image"></a>
-
-                    <a href="http://noveltyenhancement.tumblr.com/" target="_blank"><img src="static/images/sm-tumblr.jpg" class="contact-image"></a>
-
-                    <a href="https://open.spotify.com/playlist/3TEITRo2xWwCNwW6Hhx7we" target="_blank"><img src="static/images/sm-spotify.jpg" class="contact-image"></a>
-                </div>
+                <br/>
+                <br/>
+                <small><a href="index.html">Gabrielle Michaud</a> © 2019</small>
+                <br/><br/><br/>
             </center>
         </footer>
     </body>

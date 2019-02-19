@@ -5,9 +5,16 @@
         <meta charset="utf-8"/>
 
         <style type="text/css">
+            * {
+                box-sizing: border-box;
+            }
             body {
                 font-family: 'Gill Sans', Helvetica, sans-serif;
                 font-size: 20px;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
             }
             h1 {
                 display: block;
@@ -20,6 +27,22 @@
                 font-size: 40px;
                 font-weight: 400;
             }
+            footer {
+                opacity: 0.7;
+            }
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 0 4px;
+                width: 80%;
+            }
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                padding: 0 4px;
+            }
             .fancy-button {
                 display: inline-block;
                 margin: 15px;
@@ -29,7 +52,6 @@
                 border: 2px solid;
                 border-color: #CDCCCC;
                 text-decoration: none;
-                
                 color: #CDCCCC;
                 background-color: rgba(0,0,0,0);
                 transition: background-color 0.5s ease,
@@ -45,34 +67,16 @@
                 width: 90%;
                 max-width: 900px;
             }
-            .feature-image {
+            .featured-images img {
                 width: 100%;
                 border-radius: 14px;
                 box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
+                margin-top: 8px;
+                vertical-align: middle;
             }
             .contact-image {
                 width: 5%;
                 height: 5%;
-            }
-            * {
-                box-sizing: border-box;
-            }
-            .row {
-                display: -ms-flexbox;
-                display: flex;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-                padding: 0 4px;
-                width: 80%;
-            }
-            .column {
-              -ms-flex: 50%;
-              flex: 50%;
-              padding: 0 4px;
-            }
-            .column img {
-              margin-top: 8px;
-              vertical-align: middle;
             }
         </style>
     </head>
@@ -88,32 +92,34 @@
             <center>
                 <h1>Down the Rabbit Hole</h1>
                 <hr>
-                <div class="row">
+                <div class="row featured-images">
                     <div class="column">
-                        <img src="static/images/art-dragon.jpg" class="feature-image">
-                        <img src="static/images/art-snake.jpg" class="feature-image">
-                        <img src="static/images/art-tryon.jpg" class="feature-image">
-                        <img src="static/images/art-jaypeak.jpg" class="feature-image">
-                        <img src="static/images/art-wolf.jpg" class="feature-image">
-                        <img src="static/images/art-butterfly.jpg" class="feature-image">
-                        <img src="static/images/art-powerless.jpg" class="feature-image">
+                        <img src="static/images/art-dragon.jpg">
+                        <img src="static/images/art-snake.jpg">
+                        <img src="static/images/art-tryon.jpg">
+                        <img src="static/images/art-jaypeak.jpg">
+                        <img src="static/images/art-wolf.jpg">
+                        <img src="static/images/art-butterfly.jpg">
+                        <img src="static/images/art-powerless.jpg">
                     </div>
                     <div class="column">
-                        <img src="static/images/art-girl.jpg" class="feature-image">
-                        <img src="static/images/art-bird.jpg" class="feature-image">
-                        <img src="static/images/art-fog.jpg" class="feature-image">
-                        <img src="static/images/art-fire.jpg" class="feature-image">
-                        <img src="static/images/art-owl.jpg" class="feature-image">
-                        <img src="static/images/art-flower.jpg" class="feature-image">
-                        <img src="static/images/art-vienna.jpg" class="feature-image">
+                        <img src="static/images/art-girl.jpg">
+                        <img src="static/images/art-bird.jpg">
+                        <img src="static/images/art-fog.jpg">
+                        <img src="static/images/art-fire.jpg">
+                        <img src="static/images/art-owl.jpg">
+                        <img src="static/images/art-flower.jpg">
+                        <img src="static/images/art-vienna.jpg">
                     </div>
                 </div>
             </center>
         </article>
         <footer>
-        <br/>
             <center>
-                Gabrielle Michaud © 2019
+                <br/>
+                <br/>
+                <small><a href="index.html">Gabrielle Michaud</a> © 2019</small>
+                <br/><br/><br/>
             </center>
         </footer>
     </body>
