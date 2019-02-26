@@ -19,6 +19,8 @@
             h2 {
                 font-size: 40px;
                 font-weight: 400;
+                display: block;
+                text-align: center;
             }
             a {
                 color: inherit;
@@ -26,6 +28,34 @@
             }
             footer {
                 opacity: 0.7;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-bottom: 16px;
+                outline: none;
+                resize: none;
+            }
+            input[type=submit] {
+                color: black;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                background: #dddbdb;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            input[type=submit]:hover {
+                background-color: #bcdda1;
+                transition: background-color 0.5s ease,
+                            color 0.5s ease;
             }
             .fancy-button {
                 display: inline-block;
@@ -62,9 +92,21 @@
             .contact-image {
                 width: 4%;
                 height: 4%;
+                min-width: 50px;
             }
             .contact-links a:hover {
                 opacity: 0.7;
+            }
+            .container {
+              padding: 10px;
+              max-width: 700px;
+              margin: 0 auto;
+              text-align: center;
+            }
+            iframe {
+                width:100%;
+                min-height: 500px;
+                border: 0;
             }
         </style>
     </head>
@@ -85,15 +127,17 @@
                     Hey there! My name is Gabrielle and I'm a soon-to-be paramedic from Canada. I love to fully engage in different cultures when I travel, making hitchhiking and Couchsurfing my go-to modes of transport and accommodation when on the road. Next up: VanLife! My dream is to incorporate my passions for photography, web design, first aid, nature and music with a nomadic lifestyle across North America.
                 </div>
                 <br>
-                <img src="static/images/profile.jpg" class="feature-image">
-                <br>
                 <img src="static/images/worldmap.jpg" class="feature-image">
                 <br>
-                <small>Countries I've visited</small>
+                <img src="static/images/profile.jpg" class="feature-image">
                 <br><br>
             </center>
         </article>
 
+        <h2>LET'S GET IN TOUCH</h2>
+            <div class="container">
+                <iframe src="contact_form.html" onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe>
+            </div>
         <br/>
         <hr style="max-width: 700px; width: 90%">
         <center>

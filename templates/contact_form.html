@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8"/>
+        <link rel="canonical" href="https://vanlifemedic.com/contact.html"/>
+    
+        <style type="text/css">
+            body {
+                font-family: 'Gill Sans', Helvetica, sans-serif;
+                font-size: 20px;
+            }
+            fieldset {
+                border: 0;
+            }
+            input[type=text], textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-bottom: 16px;
+                outline: none;
+                resize: none;
+            }
+            input[type=submit] {
+                color: black;
+                padding: 8px 16px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                background: #dddbdb;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            input[type=submit]:hover {
+                background-color: #bcdda1;
+                transition: background-color 0.5s ease,
+                            color 0.5s ease;
+            }
+            input[disabled=1] {
+                cursor: not-allowed;
+            }
+            textarea {
+                height:200px;
+            }
+            output.errors {
+                display: block;
+                color: orange;
+            }
+            output.success {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        {% if success %}
+            <br/><br/>
+            <center>
+                <output class="success">{{details|safe}}</output>
+            </center>
+        {% else %}
+            <form action="?" method="POST" target="_self">
+                <input type="text" name="name" placeholder="Your name" required minlength="2" maxlength="64" value="{{name}}">
+                <input type="text" name="email" placeholder="Your email (so I can reply to you)" required value="{{email}}"> 
+                <input type="text" name="subject" placeholder="A short subject for your message" required minlength="2" maxlength="256" value="{{subject}}">
+                <textarea name="message" placeholder="Message" required maxlength="16384" minlength="1">{{message}}</textarea>
+                <output class="errors">{{details|safe}}</output>
+                <br/>
+                <input type="submit" value="SUBMIT">
+            </form>
+        {% endif %}
+    </body>
+</html>
