@@ -22,8 +22,7 @@ def page(name=None):
     return render_template(f'{name.lower()}.html')
 
 
-@app.route('/contact_form', methods=['GET', 'POST'])
-@app.route('/contact_form.html', methods=['GET', 'POST'])
+@app.route('/contact/form', methods=['GET', 'POST'])
 def contact_form():
     if request.method == 'GET':
         # User is asking for the form, send the empty form
