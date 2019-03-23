@@ -2,12 +2,17 @@
 <html>
 	<head>
 		<title>Nepal</title>
-        <meta charset="utf-8" />
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
 		<style type="text/css">
-			body {
+			html, body {
                 font-family: 'Gill Sans', Helvetica, sans-serif;
                 font-size: 20px;
+                background-color: #fcfcfc;
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
             }
             h1 {
                 display: block;
@@ -23,9 +28,6 @@
             a {
                 color: inherit;
                 text-decoration: none;
-            }
-            footer {
-                opacity: 0.7;
             }
             .fancy-button {
                 display: inline-block;
@@ -59,6 +61,27 @@
                 border-radius: 14px;
                 box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
             }
+            article {
+                position: relative;
+                z-index: 100;
+            }
+            footer {
+                background-image: linear-gradient(#fcfcfc, rgba(0,0,0,0)), url("static/images/nep-mist.jpg");
+                background-size: cover;
+                height: 1500px;
+                margin-top: -600px;
+                position: relative;
+                z-index: 0;
+                bottom: 0;
+            }
+            footer center {
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                width: 100%;
+                color: #ddd;
+                font-weight: 400;
+            }
 		</style>
 	</head>
 	<body>
@@ -75,45 +98,45 @@
 				<h1>Hiking in the Himalayas</h1>
 				<hr/>
 
-				<br/>
+				<br>
 				<h2>May 27 to June 14, 2018</h2>
-				<br/>
+				<br>
 				
                 <img src="static/images/nep-lukla.jpg" class="feature-image">
-                <br/>
+                <br>
                 <img src="static/images/nep-wheel.jpg" class="feature-image">
-                <br/>
+                <br>
                 <img src="static/images/nep-house.jpg" class="feature-image">
-                <br/>
+                <br><br>
 
                 <div class="main-content">
                     <h2>DAY 9 - Dingboche</h2>
                     The long and winding trail first led us through a misty rhododendron forest filled with white, yellow and pink flowers. We walked along a sand-like path which absorbed the sounds of our footsteps, engulfing us in a profound silence until we reached a metal suspension bridge filled with prayer flags.
                 </div>
-                <br>
-                <img src="static/images/nep-forest.jpg" class="feature-image">
-                <br/>
-                <br/>
-                <img src="static/images/nep-nina.jpg" class="feature-image">
                 <br><br>
+                <img src="static/images/nep-forest.jpg" class="feature-image">
+                <br>
+                <br>
+                <img src="static/images/nep-nina.jpg" class="feature-image">
+                <br><br><br>
                 <div class="main-content">
                     रेशम  फिरिरी रेशम  फिरिरी,<br>
                     उडेर जाउँ कि डाँडामा भन्ज्यांग,<br>
                     रेशम  फिरिरी
                 </div>
-                <br>
+                <br><br>
                 <img src="static/images/nep-yak.jpg" class="feature-image">
                 <br>
                 <img src="static/images/nep-river.jpg" class="feature-image">
-                <br/>
+                <br>
                 <img src="static/images/nep-tombstones.jpg" class="feature-image">
-                <br/>
+                <br>
                 <img src="static/images/nep-basecamp.jpg" class="feature-image">
-                <br/>
+                <br>
                 <div class="main-content">Everest Base Camp</div>
-                <br/><br/>
+                <br><br>
                 <img src="static/images/nep.jpg" class="feature-image">
-                <br/>
+                <br><br>
                 
                 <div class="main-content">
                     <h2>DAY 15 - Dzongla to Dragnag</h2>
@@ -122,55 +145,55 @@
                     All around us echoed the sounds of landslides, and only once on the glacier and its freshly fallen snow were we out of the avalanche-risk zone. The empty white field abruptly ended several kilometres later in a towering wall of boulders which we climbed. Once at the top of the Cho La Pass, my trekking partners and I had lunch amongst the prayer flags and the misty void at 5,420 meters
                 </div>
 
-                <br/>
+                <br><br>
                 <img src="static/images/nep-yaks.jpg" class="feature-image">
-                <br/>
+                <br><br>
                 
                 <div class="main-content">
                     <h2>DAY 16 - Gokyo</h2>
                     The stone-covered hills of ice rumbled and creaked in our presence, and the constant sounds of landslides encircling us kept us at a steady and fast pace on our hike today from Dragnag to Gokyo. On the final mount from Ngozumba Glacier, I sat and listened to the chattering of ice, and watched the alien-like desert of rocks in awe. Over the tundra lay the holy emerald-green Gokyo lake. Once in the village, we hiked around the vast body of water, and on the opposite side of the lake, we ran through a lumpy moss and grass field filled with yaks while leaping over creeks.
                 </div>
                 
-                <br/>
+                <br><br>
                 <img src="static/images/nep-gokyo.jpg" class="feature-image">
-                <br/>
+                <br>
                 <img src="static/images/nep-flowers.jpg" class="feature-image">
-                <br/>
+                <br><br>
                 
                 <div class="main-content">
                     <h2>Nepali Basics</h2>
-                    Dhanyavada: thank you<br>
-                    Krpaya: please<br>
-                    Pani: water<br>
-                    Ramro: good<br>
-                    Tato: hot<br>
-                    Chiso: cold<br>
-                    Dherai mitho chha: very delicious<br>
-                    Suba ratri: goodnight<br>
-                    Himal: mountain<br>
-                    Thakai: tired<br>
-                    Bistari: slowly<br>
-                    Jamjam: hurry<br>
-                    Chayna: no / I don’t have<br>
-                    Ukusmukus: paralysis from overeating
+                    Dhanyavada: <i>thank you</i><br>
+                    Krpaya: <i>please</i><br>
+                    Pani: <i>water</i><br>
+                    Ramro: <i>good</i><br>
+                    Tato: <i>hot</i><br>
+                    Chiso: <i>cold</i><br>
+                    Dherai mitho chha: </i>very delicious</i><br>
+                    Suba ratri: <i>goodnight</i><br>
+                    Himal: <i>mountain</i><br>
+                    Thakai: <i>tired</i><br>
+                    Bistari: <i>slowly</i><br>
+                    Jamjam: <i>hurry</i><br>
+                    Chayna: <i>no / I don’t have</i><br>
+                    Ukusmukus: <i>paralysis from overeating</i>
                 </div>
                 
-                <br>
+                <br><br><br>
                 <img src="static/images/nep-water.jpg" class="feature-image">
-                <br/>
+                <br><br>
                 
                 <div class="main-content">
                 <h2>Medication for high altitude:</h2>
                     <div class="main-content" style="max-width: 400px"> 
-                    - Diamox 50mg/day to treat altitude sickness, works by acidifying the blood and consequently increasing the respiratory rate;<br/><br>
+                    - Diamox 50mg/day to treat altitude sickness, works by acidifying the blood and consequently increasing the respiratory rate;<br><br>
                     - Decadron to stabilize High Altitude Cerebral Edema emergencies;<br><br>
                     - Sildenafil to reduce pulmonary pressure in order to stabilize High Altitude Pulmonary Edema emergencies, works by causing pulmonary vasodilation
                     </div>
-                <br>
+                <br><br>
                 <img src="static/images/nep-donkeys.jpg" class="feature-image">
-                <br/>
+                <br>
                 <img src="static/images/nep-kids.jpg" class="feature-image">
-                <br/>
+                <br><br>
 
                 <div class="main-content">
                     <h2>DAY 24 - Kathmandu</h2>
@@ -178,9 +201,9 @@
                     <br><br>
                     Kathmandu's streets are filled with cars, motorcycles, tractors and the occasional lounging cow. Neither street lights nor signs are present, and the chaotically slow-moving traffic honks repetitively. The dirt streets are lined with local stores, vegetable stalls and garbage. Only the motorbike driver wears a helmet, and any other form of protective gear is rarely seen. Women on the back of bikes usually sit sideways in their traditional dresses while cradling a baby.
                 </div>
-                <br>
+                <br><br>
 				<img src="static/images/nep-menuka.jpg" class="feature-image">
-                <br/>
+                <br><br>
 
                 <div class="main-content">
                     <h2>DAY 30</h2>
@@ -188,15 +211,12 @@
 
                     <br><br>As the sun began to rise, the boys scattered into the remaining darkness. The three of us then continued through Dubar Square and observed the 5:30am market unfold. Close to 200 people sat on straw mats behind their vegetables, flowers and clothing which lined the otherwise tourist-less pedestrian streets. Later that morning, I met up with Nina, my traveling partner, and together we strolled through the Garden of Dreams in Thamel. Behind the walls lay a peaceful garden filled with unbelievable stone gazebos, ponds and greenery.
                 </div>
-
             </center>
         </article>
         <footer>
             <center>
-                <br/>
-                <br/>
                 <small><a href="index.html">Gabrielle Michaud</a> © 2019</small>
-                <br/><br/><br/>
+                <br><br><br>
             </center>
         </footer>
     </body>

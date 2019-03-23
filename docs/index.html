@@ -11,6 +11,7 @@
                 margin: 0;
                 font-family: 'Gill Sans', Helvetica, sans-serif;
                 font-size: 20px;
+                background-color: #fcfcfc; 
             }
             a {
                 color: inherit;
@@ -43,6 +44,7 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                background-attachment: fixed;
                 filter: brightness(30%);
                 animation: fadein 5s ease forwards;
             }
@@ -149,6 +151,25 @@
             .contact-links a:hover {
                 opacity: 0.7;
             }
+            @media (hover: none) {
+                .overlay-container {
+                    overflow: initial;
+                    margin-bottom: 6vw;
+                }
+                .overlay-container img {
+                    border-radius: 14px;
+                }
+                .overlay-container .overlay-text {
+                    opacity: 0.9;
+                    border-radius: 14px;
+                    color:  black;
+                    background-color: rgba(0,0,0,0);
+                    height: 30px;
+                    top: initial;
+                    bottom: -30px;
+                    font-size: 0.8em;
+                }
+            }
         </style>
     </head>
     
@@ -158,23 +179,23 @@
             <i class="down-arrow"></i>
             <div class="content">
                 <h1>VANLIFE MEDIC</h1>
-                <br/>
+                <br>
                 <div class="box">
                     I'm an adventure seeker and music addict with a passion for traveling, 
                     web design and the medical field. Come with me on a journey around the world through the lens of my camera.
                 </div>
-                <br/><br/>
+                <br><br>
                 <hr style="max-width: 900px; width: 90%">
-                <br/>
+                <br>
                 <a href="contact.html" class="fancy-button">
                     CONTACT
                 </a>
             </div>
         </div>
                 
-        <article>
-            <center>
-                <br/>
+        <article style="background-color: black;display: block; width: 100%">
+            <center style="background-color: #fcfcfc; display: block; width: 100%; margin: auto; float: none; border-radius: 4px 4px 0px 0px">
+                <br>
                 <a href="nyc.html">
                     <div class="overlay-container">
                         <img src="static/images/index-6.jpg">
@@ -183,7 +204,7 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
 
                 <a href="cambodia.html">
                     <div class="overlay-container">
@@ -193,7 +214,7 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
 
                 <a href="nepal.html">
                     <div class="overlay-container">
@@ -203,7 +224,7 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
 
                 <a href="mexico.html">
                     <div class="overlay-container">
@@ -213,7 +234,7 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
 
                 <a href="colombia.html">
                     <div class="overlay-container">
@@ -223,7 +244,7 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
 
                 <a href="hitchhiking.html">
                     <div class="overlay-container">
@@ -233,7 +254,7 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
 
                 <a href="art.html">
                     <div class="overlay-container">
@@ -263,34 +284,34 @@
                         </div>
                     </div>
                 </a>
-                <br/>
+                <br>
             </center>
         </article>
 
-        <br/>
+        <br>
         <hr style="max-width: 900px; width: 90%">
         <center>
             <div class="contact-links">
                 <a href="https://www.instagram.com/vanlife_medic/" target="_blank">
-                    <img src="static/images/sm-instagram.jpg" class="contact-image">
+                    <img src="static/images/sm-instagram.png" class="contact-image">
                 </a>
 
                 <a href="http://noveltyenhancement.tumblr.com/" target="_blank">
-                    <img src="static/images/sm-tumblr.jpg" class="contact-image">
+                    <img src="static/images/sm-tumblr.png" class="contact-image">
                 </a>
 
                 <a href="https://open.spotify.com/playlist/3TEITRo2xWwCNwW6Hhx7we" target="_blank">
-                    <img src="static/images/sm-spotify.jpg" class="contact-image">
+                    <img src="static/images/sm-spotify.png" class="contact-image">
                 </a>
             </div>
         </center>
 
         <footer>
             <center>
-                <br/>
-                <br/>
+                <br>
+                <br>
                 <small><a href="index.html">Gabrielle Michaud</a> © 2019</small>
-                <br/><br/><br/>
+                <br><br><br>
             </center>
         </footer>
     </body>
