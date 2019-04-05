@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Trips</title>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto|Barlow" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/boxborder-demo.css">
+        <link rel="stylesheet" type="text/css" href="css/boxborder-set1.css">
+
+    		<style type="text/css">
+    			html, body {
+                    background-color: #fcfcfc;
+                    color: black;
+                    font-family: 'Gill Sans', Helvetica, sans-serif;
+                    font-size: 20px;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    z-index: 100;
+                }
+    			a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+                h1 {
+                    display: block;
+    				font-family: 'Barlow', Helvetica, sans-serif;
+                    font-size: 8vw;
+                    font-weight: 200;
+                    text-transform: uppercase;
+                    white-space: pre-line;
+                    width: 100%;
+                }
+                h2 {
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+            .main-content {
+                max-width: 700px;
+                width: 90%;
+            }
+            .feature-image {
+                border-radius: 14px;
+                box-shadow: 4px 4px 4px rgba(0,0,0,0.02);
+                margin-bottom: 5px;
+                margin-top: 5px;
+                max-width: 700px;
+                width: 90%;
+            }
+            .box-border {
+            	border: 10px solid #fff;
+                color: #fff;
+                padding: 1em 1em 3em;
+            }
+
+            figure.effect-bubba {
+            	background-color: black;
+            }
+
+            figure.effect-bubba img {
+            	opacity: 0.7;
+            	transition: opacity 0.35s;
+            	width: 480px;
+            }
+
+            figure.effect-bubba:hover img {
+            	opacity: 0.4;
+            }
+
+            figure.effect-bubba figcaption::before,
+            figure.effect-bubba figcaption::after {
+                bottom: 30px;
+                content: '';
+                left: 30px;
+                opacity: 0;
+                position: absolute;
+                right: 30px;
+                top: 30px;
+                transition: opacity 0.35s, transform 0.35s;
+            }
+
+            figure.effect-bubba figcaption::before {
+                border-bottom: 1px solid #fff;
+            	border-top: 1px solid #fff;
+            	transform: scale(0,1);
+            }
+
+            figure.effect-bubba figcaption::after {
+                border-left: 1px solid #fff;
+                border-right: 1px solid #fff;
+                transform: scale(1,0);
+            }
+
+            figure.effect-bubba h2 {
+                padding-top: 0;
+            	transform: translate3d(0,20px,0);
+                transition: transform 0.35s;
+                padding: 10px;
+            }
+
+            figure.effect-bubba p {
+            	padding: 8px 2em;
+            	opacity: 0;
+            	transition: opacity 0.35s, transform 0.35s;
+            	transform: translate3d(0,20px,0);
+            }
+
+            figure.effect-bubba:hover figcaption::before,
+            figure.effect-bubba:hover figcaption::after {
+            	opacity: 1;
+            	transform: scale(1);
+            }
+
+            figure.effect-bubba:hover h2,
+            figure.effect-bubba:hover p {
+            	opacity: 1;
+            	transform: translate3d(0,0,0);
+            }
+
+            header {
+                align-items: center;
+                background-color: #111;
+                background-size: cover;
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                min-height: 500px;
+                position: relative;
+            }
+            nav {
+                background-color: #d9d9d9;
+                display: block;
+                overflow: hidden;
+                top: 0;
+                width: 100%;
+                z-index: 10;
+            }
+            nav a {
+                color: #646464;
+                display: block;
+                float: right;
+                font-size: 1.2vw;
+                margin-right: 28px;
+                padding: 20px 16px;
+                text-align: center;
+                text-decoration: none;
+            }
+            nav a:hover {
+                background-color: #b5b5b5;
+                color: black;
+            }
+            nav .logo {
+                float: left;
+                margin-left: 20px;
+                padding: 12px 12px;
+            }
+            nav .logo:hover {
+                background-color: initial;
+                color: initial;
+            }
+            nav .logo img {
+                height: 30px;
+                transition: transform 2s ease;
+            }
+            nav .logo:hover img {
+                transform: rotate(360deg);
+                transition: transform 2s ease;
+            }
+		</style>
+	</head>
+	<body>
+        <center>
+            <nav>
+                <a href="#contact">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a href="balkumar.html" class="logo">
+                    <img src="static/images/logo-compass.png">
+                </a>
+            </nav>
+            <h1>Itineraries</h1>
+            <hr>
+            <br>
+            <div class="grid" style="display: block;">
+                <figure class="effect-bubba">
+                    <a href="ebc.html">
+                    <img src="static/images/ebc.jpg"/>
+                    <figcaption>
+                        <h2>Everest Base Camp & Gokyo</h2>
+                        <p>20-22 days<br>
+                            difficulty: advanced<br>
+                            maximum altitude: 5,500m<br><br>
+                            <span style="font-weight: 200; font-size: 12px;">Kalapather (5,550m), Cho-La Pass, Gokyo Lake, Gokyo Ri (5,360m)</span></p>
+                    </figcaption>   
+                    </a>        
+                </figure>
+                <figure class="effect-bubba">
+                    <img src="static/images/manaslu.jpg"/>
+                    <figcaption>
+                        <h2>Manaslu Base Camp</h2>
+                        <p>20-22 days<br>
+                            difficulty: advanced<br>
+                            maximum altitude: 5,115m<br><br>
+                            <span style="font-weight: 200; font-size: 12px;">Larke Pass, Mt. Manaslu</span></p>
+                    </figcaption>           
+                </figure>
+                <br/>
+				<figure class="effect-bubba">
+					<img src="static/images/abc.jpg"/>
+					<figcaption>
+						<h2>Annapurna Base Camp</h2>
+						<p>14-16 days<br>
+                            difficulty: intermediate<br>
+                            maximum altitude: 4,200m<br><br>
+                            <span style="font-weight: 200; font-size: 12px;">Pool Hill, Chomrong, Machapuchare Base Camp, ABC, Jhinu Danda hot springs</span></p>
+					</figcaption>			
+				</figure>
+                <figure class="effect-bubba">
+                    <img src="static/images/annapurna-circuit.jpg"/>
+                    <figcaption>
+                        <h2>Annapurna Circuit</h2>
+                        <p>14-16 days<br>
+                            difficulty: intermediate<br>
+                            maximum altitude: 5,400m<br><br>
+                            <span style="font-weight: 200; font-size: 12px;">Ice Lake, Thorong La Pass</span></p>
+                    </figcaption>           
+                </figure>
+            </div>
+            <br><br><br>
+            <div class="main-content">
+                <h2>ITEMS TO BRING</h2>
+                40-60L backpack<br>
+                -3ºC sleeping bag<br>
+                Warm layers (gloves & tuque)<br>
+                Hiking boots<br>
+                Rain gear<br>
+                Sunglasses<br>
+                Water bottle<br>
+                Medication for high altitude<br>
+                Medical insurance<br><br><br>
+
+                <h2>FIRST AID</h2>
+                Diamox 50mg/day to treat altitude sickness, Decadron to stabilize High Altitude Cerebral Edema emergencies, sildenafil to reduce pulmonary pressure in order to stabilize High Altitude Pulmonary Edema emergencies.<br><br><br>
+
+                <h2>NEPAL</h2>
+                The best times to trek in the Himalayas is from April to May, and again from October to November to avoid the rainy season.<br><br><br>
+            </div>
+		</center>
+        <br>
+	</body>
+</html>
