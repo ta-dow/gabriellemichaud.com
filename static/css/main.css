@@ -230,9 +230,8 @@ footer {
 }
 
 .contact-image {
-    width: 4%;
-    height: 4%;
-    min-width: 50px;
+    width: 40px;
+    margin: 0 10px;
 }
 .contact-links a:hover {
     opacity: 0.7;
