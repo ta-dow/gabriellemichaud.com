@@ -134,7 +134,7 @@ footer small {
 
 /*Images*/
 .main-img {
-    margin: 0; 
+    margin: 0;
     width: 100%;
     height: auto;
     border-radius: 6px;
@@ -324,7 +324,7 @@ footer small {
 
 /*Media*/
 @media (max-width: 1200px) {
-    .col-xl-6, .col-lg-6 {
+    .col-xl-6, .col-lg-6, .col-lg-4 {
         margin-bottom: 24px;
     }
     .grid-img {
