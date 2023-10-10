@@ -1,4 +1,4 @@
-html, body {
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -38,6 +38,35 @@ footer small {
 @keyframes fadein {
     from {opacity: 0;}
     to   {opacity: 1;}
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: text-bottom;
+    border-right: 2px solid #fff;
+    animation:
+        typing 3.7s steps(40, end),
+        blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent 
+    }
+    50% {
+        border-color: white
+    }
 }
 
 /*Header Image*/
