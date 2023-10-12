@@ -361,7 +361,7 @@ footer small {
         width: 100%;
     }
     .header-content > h1 {
-        font-size: 70px;
+        font-size: 40px;
     }
 }
 @media (max-width: 750px) {
