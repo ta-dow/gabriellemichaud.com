@@ -26,19 +26,15 @@
                 <img src="static/images/mtl-birdview.jpg" class="main-img" alt="drone view of Montreal streets">
                 <br><br><br><br>
                 <p>
-                    Montréal is the only fully bilingual city in the French Canadian province of Québec, and it's known for its diversity, art, and the never-ending construction. Mount Royal - the small 230m mountain in the centre of the city from which Montreal gets its name - allows for a quick escape into nature with some pretty nice views from the top. In the winter, Beaver Lake on the "summit" is turned into a skating rink which you can get to by cross-country skiing up along the mountain, if you're feeling adventurous. You can find my full Google Maps guide <a href="https://goo.gl/maps/vfoA7DgfyW4PM9yh8" target="_blank"><b><u>here</u></b></a>.
+                    Montréal is the only fully bilingual city in the French Canadian province of Québec, and it's known for its diversity, art, and the never-ending construction. Mount Royal – the small 230m mountain in the centre of the city from which Montreal gets its name – allows for a quick escape into nature with some pretty nice views from the top. In the winter, Beaver Lake on the "summit" is turned into a skating rink which you can get to by cross-country skiing up along the mountain, if you're feeling adventurous. You can find my full Google Maps guide <a href="https://goo.gl/maps/vfoA7DgfyW4PM9yh8" target="_blank"><b><u>here</u></b></a>.
                 </p>
                 <br><br>
-                <img src="static/images/mtl-drone.jpg" class="main-img" alt="drone view of Montreal skyline">
-                <br><br><br><br>
                 <h2>Things to Do</h2>
                 <br>
                 <p>
-                    Zero Gravity Rock Climbing & Yoga Gym<br>
                     Allez Up Rock Climbing Gym<br>
                     The Montreal Museum of Fine Arts<br>
                     Montreal Science Centre<br>
-                    La Ronde Amusement Park<br>
                     Parc La Fontaine<br>
                     Tamtams on Mount Royal on warm Sunday Mornings<br>
                     A/MAZE: escape games<br>
@@ -47,8 +43,6 @@
                     Jean Talon Market and Atwater Market<br>
                     Watch the sunset from on top of St Joseph's Oratory<br>
                     Concordia Greenhouse<br>
-                    l'Escalier<br>
-                    Casa Del Popolo: Live Music Venue
                 </p>
                 <br><br><br>
                 <img src="static/images/mtl-cone.jpg" class="main-img" alt="inuksuk of cones">
@@ -72,56 +66,10 @@
                     Darbar<br>
                     Kafé Kafta<br>
                     Omnivore<br>
-                    Patati Patata Friterie de Luxe<br>
-                    Anticafé (Coworking)<br>
                     Dieu du Ciel!<br>
                     Le 4e Mur: Murder-Mystery Bar<br>
-                    Café Milano<br>
                     Fairmount Bagels
                 </p>
-                <br><br>
-                <img src="static/images/mtl-oka.jpg" class="main-img" alt="frozen river crossing">
-                <br><br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img src="static/images/mtl-oakley.jpg" class="main-img" alt="dog on frozen lake">
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="static/images/mtl-moto-1.jpg" class="main-img" alt="motorbiking with snow">
-                    </div>
-                </div>
-                <br><br>
-                <p>
-                    Every winter, an ice bridge opens just west of the island of Montreal. Usually all through January and February, you can drive or walk across the frozen Lake of Two Mountains which separates the towns of Hudson and Oka. 
-                </p>
-                <br><br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img src="static/images/mtl-rock.jpg" class="main-img grid-img" alt="indoor rock climbing">
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="static/images/mtl-nina.jpg" class="main-img grid-img" alt="portrait with mural background">
-                    </div>
-                </div>
-                <br><br><br>    
-                <h2>Outside of the City</h2>
-                <br>
-                <p>
-                    Mauricie National Park<br>
-                    Regional Park of Seven Falls (Sept-Chutes)<br>
-                    Sommet Morin Heights<br>
-                    Ski Saint Sauveur<br>
-                    Ski Mont Vallée Bleue
-                </p>
-                <br><br>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img src="static/images/mtl-wires.jpg" class="main-img grid-img" alt="wires in box">
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="static/images/mtl-forest.jpg" class="main-img grid-img" alt="skiing in forest">
-                    </div>
-                </div>
                 <br><br>
                 <footer>
                     <hr style="max-width: 700px; width: 90%">
@@ -138,10 +86,18 @@
                     </div>
                     <br><br><br><br>
                     <small>
-                        <a href="index.html">Gabrielle Michaud © 2023</a>
+                        <a href="index.html">Gabrielle Michaud &copy; <span id="copyrightYear"></span></a>
                     </small>
                 </footer>
                 <br><br>
+                <!-- update copyright year automatically -->
+                <script>
+                    function updateCopyrightYear() {
+                        const currentYear = new Date().getFullYear();
+                        document.getElementById("copyrightYear").textContent = currentYear;
+                    }
+                    updateCopyrightYear();
+                </script>
             </center>
         </div>
     </body>

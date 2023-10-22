@@ -186,7 +186,7 @@
                     </div>
                     <br><br><br><br>
                     <small>
-                        <a href="index.html">Gabrielle Michaud © 2023</a>
+                        <a href="index.html">Gabrielle Michaud &copy; <span id="copyrightYear"></span></a>
                     </small>
                 </footer>
                 <br><br>
@@ -202,6 +202,14 @@
 		                    });
 		                });
 		            });
+		        </script>
+		        <!-- update copyright year automatically -->
+		        <script>
+		        	function updateCopyrightYear() {
+		                const currentYear = new Date().getFullYear();
+		                document.getElementById("copyrightYear").textContent = currentYear;
+		            }
+		            updateCopyrightYear();
 		        </script>
 	    	</div>
 		</div>
