@@ -162,6 +162,11 @@ footer small {
 }
 
 /*Images*/
+@media (min-width: 992px) {
+    .row {
+        margin-bottom: 24px;
+    }
+}
 .main-img {
     margin: 0;
     width: 100%;
@@ -287,9 +292,13 @@ footer small {
     width: 44px;
     margin: 12px;
 }
-
-.grid-img {
+.idx-img {
     height: 40em;
+    object-fit: cover;
+    overflow: hidden;
+}
+.grid-img {
+    height: 50em;
     object-fit: cover;
     overflow: hidden;
 }
@@ -356,7 +365,7 @@ footer small {
     .col-xl-6, .col-lg-6, .col-lg-4 {
         margin-bottom: 24px;
     }
-    .grid-img {
+    .grid-img, .idx-img {
         height: 500px;
         width: 100%;
     }
