@@ -32,11 +32,26 @@
                             </div>
                         </div>
                         <div class="col-lg-10">
-                            <br>
                             <header>
+                                <nav>
+                                    <a href="index.html" class="btn">
+                                        <span class="btn-inner">HOME</span>
+                                    </a>
+                                </nav>
+                                <br><br>
                                 <h1>Portfolio</h1>
                                 <h4>by Gabrielle Michaud</h4>
                             </header>
+                            <br><br>
+                            <p class="w-75">
+                                Over the past four years working full-time as a paramedic in Montreal, I've been exposed to a rich diversity of residential settings, igniting a growing interest in exploring alternative living arrangements to enhance accessibility and safety. Many of the emergencies I've responded to on the ambulance highlight the prospect of prevention through strategic measures. Enhancing fire evacuation routes, utilizing resilient building materials specifically designed to endure Québec's harsh weather conditions, and incorporating essential tools like ramps for individuals with reduced mobility are pivotal steps in averting potential crises. My goal is to comprehend every facet of design beyond the paramedic scope, delving into preventative measures for overall well-being and reimagining our way of living.
+                                <br><br>
+                                My inspiration is also rooted in my upbringing in Denmark. European architecture and Danish community-based urban design fascinate me. I aspire to pioneer an innovative approach to design in Canada, breaking away from generic standards. My aim is to incorporate meaningful ornamentation into designs that reflect and harmonize with the local surroundings. Authenticity holds great value for me; for instance, I believe in comprehensive restorations of historical buildings rather than merely preserving their facades. My dream is to build with purpose and draw insights from the environment, ensuring that creations today withstand the test of time. I want to explore alternative natural materials that offer longevity while remaining easily recyclable if needed.
+                                <br><br>
+                                While I may not have a formal academic background in design, my innate curiosity propels me to continually reflect on ways to enhance the aesthetic and functional aspects of our daily experiences. My overarching goal is fuelled by a commitment to improve accessibility, envisioning a future where design seamlessly integrates with the broader tapestry of our lives.
+                            </p>
+                            <br><br>
+                            <hr class="w-50">
                             <br>
                             <h2 id="web-dev" style="padding-top: 30px">Web Development</h2>
                             <br>
@@ -164,6 +179,12 @@
                             <p class="w-75">A few years back, I took part in an event centered around the concept of metamorphosis. My aim was to turn an outdated item into wearable art before the event, and I achieved this by creating a top from cut-up CDs arranged to resemble fish scales. I sewed the fabric to fit my body and meticulously cut the CDs into triangles, securing them with glue. The process took longer than expected due to the reflective layer peeling away. Since then, I've honed my sewing skills by crafting numerous aprons for friends and family.</p>
                             <br><br>
                             <img src="static/images/art-shirt.jpg" class="main-img" style="width: 70%">
+                            <br><br><br><br>
+                            <footer>
+                                <small>
+                                    <a href="index.html">Gabrielle Michaud &copy; <span id="copyrightYear"></span></a>
+                                </small>
+                            </footer>
                             <br><br>
                         </div>
                     </div>
@@ -173,5 +194,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+        <script>
+            function updateCopyrightYear() {
+                const currentYear = new Date().getFullYear();
+                document.getElementById("copyrightYear").textContent = currentYear;
+            }
+            updateCopyrightYear();
+        </script>
 </html>
