@@ -417,6 +417,10 @@ dd {
 .sticky-top {
     top: 70px;
 }
+.justify {
+    text-align: justify;
+    text-align-last: center;
+}
 /*Media*/
 @media (max-width: 1200px) {
     .col-xl-6, .col-lg-6, .col-lg-4 {
