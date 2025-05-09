@@ -36,6 +36,12 @@ p {
     line-height: 1.7;
     margin: 0;
 }
+@media (max-width: 767px) {
+  p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+}
 footer small {
     opacity: .7;
 }
@@ -420,6 +426,29 @@ dd {
 .justify {
     text-align: justify;
     text-align-last: center;
+}
+
+/*Carousel*/
+.custom-carousel-control {
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.carousel-control-prev.custom-carousel-control {
+    left: -3rem;
+}
+.carousel-control-next.custom-carousel-control {
+    right: -3rem;
+}
+.custom-carousel-control i {
+    font-size: 2rem;
+    color: black;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+.custom-carousel-control i:hover {
+    opacity: 0.7;
 }
 /*Media*/
 @media (max-width: 1200px) {
