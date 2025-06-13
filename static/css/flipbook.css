@@ -1,7 +1,7 @@
 .flipbook {
     position: relative;
     width: 45vw;
-    max-width: 350px;
+    max-width: 400px;
     aspect-ratio: 7 / 11;
 }
 
